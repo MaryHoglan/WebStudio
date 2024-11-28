@@ -54,7 +54,7 @@
           </ul>
         </address>
 
-        <button class="burger-btn" type="button">
+        <button class="burger-btn" type="button" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-solidmenu"></use>
           </svg>
@@ -63,10 +63,70 @@
 
       <div class="mobile-menu" data-menu>
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close" data-menu-close>Close</button>
-          <nav class="mobile-menu-nav">Navigation</nav>
-          <address>Address</address>
-          <div>Soc link</div>
+          <button class="mobile-menu-close" data-menu-close>
+            <svg class="menu-icon" width="8" height="8">
+              <use href="/images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="menu-nav-list">
+              <li class="menu-nav-item">
+                <a class="-meny-nav-link" href="./index.html">Studio</a>
+              </li>
+              <li class="menu-nav-item">
+                <a class="-meny-nav-link" href="">Portfolio</a>
+              </li>
+              <li class="menu-nav-item">
+                <a class="-meny-nav-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="contacts-menu">
+            <ul class="contacts-list-menu">
+              <li class="contacts-item-menu">
+                <a class="contacts-link-menu" href="mailto:info@devstudio.com"
+                  >info@devstudio.com
+                </a>
+              </li>
+              <li>
+                <a class="contacts-link-menu" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div>
+            <ul class="social-media-list">
+              <li class="social-media-items">
+                <a href="" class="social-media-link">
+                  <svg class="social-media-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media-items">
+                <a href="" class="social-media-link">
+                  <svg class="social-media-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media-items">
+                <a href="" class="social-media-link">
+                  <svg class="social-media-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media-items">
+                <a href="" class="social-media-link">
+                  <svg class="social-media-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -74,10 +134,12 @@
     <!-- Головний блок  секція 1 -->
 
     <main>
-      <section class="hero hidden">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="button">Order Service</button>
+          <button type="button" class="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -516,7 +578,7 @@
 
     <!-- Модальне вікно-->
 
-    <div class="backdrop is-open hidden">
+    <div class="backdrop is-open hidden" data-modal>
       <div class="modal">
         <button type="button" class="button-close">
           <svg class="close-icon" width="8" height="8">
@@ -601,9 +663,18 @@
               <a class="modal-check-link" href="">Privacy Policy</a>
             </label>
           </div>
-          <button type="button" class="modal-button-send button">Send</button>
+          <button
+            type="button"
+            class="modal-button-send button"
+            data-modal-close
+          >
+            Send
+          </button>
         </form>
       </div>
     </div>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
