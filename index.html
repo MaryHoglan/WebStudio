@@ -53,13 +53,28 @@
             </li>
           </ul>
         </address>
+
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-solidmenu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>Close</button>
+          <nav class="mobile-menu-nav">Navigation</nav>
+          <address>Address</address>
+          <div>Soc link</div>
+        </div>
       </div>
     </header>
 
     <!-- Головний блок  секція 1 -->
 
     <main>
-      <section class="hero">
+      <section class="hero hidden">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="button">Order Service</button>
@@ -68,7 +83,7 @@
 
       <!-- Секція послуг  секція 2-->
 
-      <section class="services">
+      <section class="services hidden">
         <div class="container">
           <h2 class="visually-hidden">Services</h2>
           <ul class="services-list">
@@ -126,7 +141,7 @@
 
       <!-- Секція команди  секція 3 -->
 
-      <section class="team">
+      <section class="team hidden">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -300,7 +315,7 @@
 
       <!-- Секція портфоліо секція 4 -->
 
-      <section class="portfolio">
+      <section class="portfolio hidden">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -430,7 +445,7 @@
     </main>
     <!-- Футер -->
 
-    <footer class="footer">
+    <footer class="footer hidden">
       <div class="container footer-container">
         <div class="footer-box">
           <a class="footer-logo" href="./index.html"
@@ -501,7 +516,7 @@
 
     <!-- Модальне вікно-->
 
-    <div class="backdrop is-open">
+    <div class="backdrop is-open hidden">
       <div class="modal">
         <button type="button" class="button-close">
           <svg class="close-icon" width="8" height="8">
