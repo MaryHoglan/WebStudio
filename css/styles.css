@@ -561,6 +561,20 @@ font-weight: 700;
     background-color: #404bbf;
 }
 
+@media screen and (min-width: 768px) {
+    .team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .team-list { flex-wrap: nowrap;
+        gap: 24px;
+    }
+      
+}
 
 /* #endregion */
 
