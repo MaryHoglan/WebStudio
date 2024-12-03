@@ -175,11 +175,7 @@ button {
 
 }
 
-.footer-social-media {
-    width: 208px;
 
-
-}
 
 .footer-social-text {
     font-weight: 500;
@@ -204,7 +200,11 @@ button {
     gap: 16px;
 }
 
+.footer-social-media {
+    width: 208px;
 
+
+}
 
 .footer-social-items {
     width: 40px;
