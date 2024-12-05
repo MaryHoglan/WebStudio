@@ -280,7 +280,8 @@ button {
 
 }
 
-.menu-icon { fill: #2e2f42;}
+.menu-icon { 
+    fill: #2f2f37;}
 
 .meny-nav-link {
     color: #2e2f42;
